@@ -1,1 +1,58 @@
+* {
+	font-family: Verdana, Tahoma, sans-serif;
+}
 
+a {
+	text-decoration: none;
+}
+
+/*----------------
+NAV
+------------------*/
+
+nav {
+	background-color: lightcoral;
+}
+
+.nav-item {
+	margin: 0 20px 0 20px;
+}
+
+/*----------------
+MAIN
+------------------*/
+
+main {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 16px;
+}
+
+/*----------------
+FOOTER
+------------------*/
+
+footer {
+	background-color: lightcoral;
+	text-align: center;
+	margin: auto;
+	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
