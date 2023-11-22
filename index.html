@@ -10,8 +10,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<a class="navbar-brand order-1" href="#">Fi M-D</a>
+		<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -43,25 +42,101 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Projects</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<main>
-			<p class="welcome">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.
-			</p>
+			<section class="profile">
+				<div class="profile-text">
+					<h3>Hey there, I'm</h3>
+					<h1>Fi M-D</h1>
+					<h2>SEO, Developer & Adventurer</h2>
+				</div>
+				<img
+					class="profile-image"
+					src="/images/fi-profile-image.jpeg"
+					alt="Picture of Fi M-D"
+				/>
+			</section>
+
+			<hr />
+
+			<section class="about">
+				<p class="intro">
+					Currently based in Sydney, I'm half Dutch, half Scots and grew up in
+					the UK. I love all things tech & outdoors, and currently work as a
+					Senior SEO Manager for a digital agency.
+				</p>
+				<p class="intro">
+					I'm currently studying full stack software engineering with Academy XI
+					and building up my portfolio.
+				</p>
+			</section>
+
+			<hr />
+
+			<section class="projects gap-5 row row-cols-1 row-cols-md-3 g-4">
+				<div class="card border-success mb-3" style="max-width: 18rem">
+					<img
+						src="images/fi-profile-image.jpeg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-header bg-transparent border-success">
+						<h5 class="card-title">Success card title</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href=".."><button class="card-button">Find out more</button></a>
+					</div>
+				</div>
+				<div class="card border-success mb-3" style="max-width: 18rem">
+					<img
+						src="images/fi-profile-image.jpeg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-header bg-transparent border-success">
+						<h5 class="card-title">Success card title</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href=".."><button class="card-button">Find out more</button></a>
+					</div>
+				</div>
+				<div class="card border-success mb-3" style="max-width: 18rem">
+					<img
+						src="images/fi-profile-image.jpeg"
+						class="card-img-top"
+						alt="..."
+					/>
+					<div class="card-header bg-transparent border-success">
+						<h5 class="card-title">Success card title</h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">
+							Some quick example text to build on the card title and make up the
+							bulk of the card's content.
+						</p>
+						<a href=".."><button class="card-button">Find out more</button></a>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer>
-			<div>
-				<a class="contact" href="mailto:fimdtech@gmail.com">Get in touch</a>
+			<div class="contact">
+				<a href="mailto:fimdtech@gmail.com">Get in touch</a>
 			</div>
 		</footer>
 		<script

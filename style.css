@@ -2,8 +2,18 @@
 	font-family: Verdana, Tahoma, sans-serif;
 }
 
+body {
+	background-color: #ffffed;
+}
+
 a {
+	font-weight: ;
+	color: #ffffed;
 	text-decoration: none;
+}
+
+a:hover {
+	color: hotpink;
 }
 
 /*----------------
@@ -11,13 +21,17 @@ NAV
 ------------------*/
 
 nav {
-	background-color: lightcoral;
+	background-color: #004225;
+	color: #ffffed;
 }
 
 .nav-item {
 	margin: 0 20px 0 20px;
 }
 
+.navbar-toggler {
+	margin-left: 10px;
+}
 /*----------------
 MAIN
 ------------------*/
@@ -31,12 +45,24 @@ main {
 	margin-right: auto;
 }
 
+section {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
 h1 {
-	font-size: 28px;
+	font-size: 3rem;
+	font-weight: bolder;
+	color: hotpink;
+	padding: 0.2rem 0 0.2rem 0;
+}
+
+h2 {
+	font-size: 2rem;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 
 p {
@@ -44,15 +70,83 @@ p {
 }
 
 /*----------------
+PROFILE
+------------------*/
+
+.profile-text {
+	width: 40%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.profile-image {
+	border-radius: 50%;
+	width: 20rem;
+}
+
+/*----------------
+ABOUT
+------------------*/
+
+.intro {
+	width: 80%;
+	margin: auto;
+}
+
+/*----------------
+PROJECTS
+------------------*/
+
+.projects {
+	display: flex;
+	justify-content: center;
+}
+
+.card-img-top {
+	margin-top: 10px;
+}
+
+.card-button {
+	background-color: hotpink;
+	border: none;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font: bolder;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 2px;
+}
+
+/*----------------
 FOOTER
 ------------------*/
 
 footer {
-	background-color: lightcoral;
+	background-color: #004225;
 	text-align: center;
 	margin: auto;
 	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-	position: fixed;
+	position: sticky;
 	bottom: 0;
+	height: 4rem;
 	width: 100%;
+}
+
+.contact {
+	padding-top: 1rem;
+}
+
+/*----------------
+MEDIA
+------------------*/
+
+@media only screen and (max-width: 678px) {
+	.profile-text {
+		text-align: center;
+		width: 80%;
+	}
 }
