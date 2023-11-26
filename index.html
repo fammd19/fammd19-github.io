@@ -7,13 +7,15 @@
 			name="description"
 			content="Welcome to Fi M-D's protfolio website - SEO, Developer, Adventurer."
 		/>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="scripts.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
@@ -43,13 +45,13 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Projects</a>
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="/blog-index.html">Blog</a>
 						</li>
 					</ul>
 				</div>
@@ -71,70 +73,101 @@
 
 			<hr />
 
-			<section class="about">
-				<p class="intro">
+			<section id="about" class="about">
+				<p class="about-intro">
 					Currently based in Sydney, I'm half Dutch, half Scots and grew up in
 					the UK. I love all things tech & outdoors, and currently work as a
-					Senior SEO Manager for a digital agency.
+					Senior SEO Manager for a digital agency.<br />
+					I'm also studying full stack software engineering with Academy XI and
+					building up my portfolio - thanks for checking it out!
 				</p>
-				<p class="intro">
-					I'm currently studying full stack software engineering with Academy XI
-					and building up my portfolio.
-				</p>
+				<br />
+				<h4>Core skills:</h4>
+				<table class="skills-table">
+					<tr>
+						<td><img src="/images/icons/search-1.svg" /></td>
+						<td>Tech & on-page SEO</td>
+					</tr>
+					<tr>
+						<td><img src="/images/icons/vector-pen-1.svg" /></td>
+						<td>Content strategy & writing</td>
+					</tr>
+					<tr>
+						<td><img src="/images/icons/calendar-range-1.svg" /></td>
+						<td>Project management</td>
+					</tr>
+					<tr>
+						<td><img src="/images/icons/laptop-1.svg" /></td>
+						<td>Web design & development</td>
+					</tr>
+				</table>
 			</section>
 
 			<hr />
 
-			<section class="projects gap-5 row row-cols-1 row-cols-md-3 g-4">
-				<div class="card border-success mb-3" style="max-width: 18rem">
-					<img
-						src="images/fi-profile-image.jpeg"
-						class="card-img-top"
-						alt="..."
-					/>
-					<div class="card-header bg-transparent border-success">
-						<h5 class="card-title">Success card title</h5>
+			<section id="projects">
+				<h3>Projects</h3>
+				<p class="projects-intro">
+					Below are a sample of my most recent projects. As I build up my
+					portfolio I'll create a specific portfolio space.
+				</p>
+				<div class="projects gap-5 row">
+					<div class="card border-success mb-3" style="max-width: 18rem">
+						<img
+							src="images/jillthevet.com.png"
+							class="card-img-top"
+							alt="Screenshot of website built for client"
+						/>
+						<div class="card-header bg-transparent border-success">
+							<h5 class="card-title">jillthevet.com</h5>
+						</div>
+						<div class="card-body">
+							<p class="card-text">
+								Github pages website leveraging the Bootstrap framework which
+								was built for a veterninary surgeon.
+							</p>
+							<a href="projects/project-example.html"
+								><button class="card-button">Find out more</button></a
+							>
+						</div>
 					</div>
-					<div class="card-body">
-						<p class="card-text">
-							Some quick example text to build on the card title and make up the
-							bulk of the card's content.
-						</p>
-						<a href=".."><button class="card-button">Find out more</button></a>
+					<div class="card border-success mb-3" style="max-width: 18rem">
+						<img
+							src="images/wordpress-template.jpeg"
+							class="card-img-top"
+							alt="Screenshot of work in progress wosrdpress template"
+						/>
+						<div class="card-header bg-transparent border-success">
+							<h5 class="card-title">Wordpress template</h5>
+						</div>
+						<div class="card-body">
+							<p class="card-text">
+								Wordpress template being developed for use on a blog site. This
+								is a work in progress.
+							</p>
+							<a href="projects/project-example.html"
+								><button class="card-button">Find out more</button></a
+							>
+						</div>
 					</div>
-				</div>
-				<div class="card border-success mb-3" style="max-width: 18rem">
-					<img
-						src="images/fi-profile-image.jpeg"
-						class="card-img-top"
-						alt="..."
-					/>
-					<div class="card-header bg-transparent border-success">
-						<h5 class="card-title">Success card title</h5>
-					</div>
-					<div class="card-body">
-						<p class="card-text">
-							Some quick example text to build on the card title and make up the
-							bulk of the card's content.
-						</p>
-						<a href=".."><button class="card-button">Find out more</button></a>
-					</div>
-				</div>
-				<div class="card border-success mb-3" style="max-width: 18rem">
-					<img
-						src="images/fi-profile-image.jpeg"
-						class="card-img-top"
-						alt="..."
-					/>
-					<div class="card-header bg-transparent border-success">
-						<h5 class="card-title">Success card title</h5>
-					</div>
-					<div class="card-body">
-						<p class="card-text">
-							Some quick example text to build on the card title and make up the
-							bulk of the card's content.
-						</p>
-						<a href=".."><button class="card-button">Find out more</button></a>
+					<div class="card border-success mb-3" style="max-width: 18rem">
+						<img
+							src="images/lacrosse-nsw.png"
+							class="card-img-top"
+							alt="Example website redesigned for a sports organisation"
+						/>
+						<div class="card-header bg-transparent border-success">
+							<h5 class="card-title">Lacrosse NSW</h5>
+						</div>
+						<div class="card-body">
+							<p class="card-text">
+								Site redesign focussing on improving UX & SEO. Built on
+								Squarespace with custom CSS.
+							</p>
+							<a href="projects/project-example.html"
+								><button class="card-button">Find out more</button></a
+							>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -32,6 +32,17 @@ nav {
 .navbar-toggler {
 	margin-left: 10px;
 }
+
+/*Adjust for header on fargment links*/
+#about::before,
+#projects::before {
+	content: "";
+	display: block;
+	height: 90px;
+	margin-top: -90px;
+	visibility: hidden;
+}
+
 /*----------------
 MAIN
 ------------------*/
@@ -63,6 +74,11 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
+	color: #004225;
+}
+
+h4 {
+	font-size: 1.2rem;
 }
 
 p {
@@ -89,14 +105,27 @@ PROFILE
 ABOUT
 ------------------*/
 
-.intro {
+.about-intro {
 	width: 80%;
 	margin: auto;
+}
+
+.skills-table {
+	text-align: left;
+	margin: auto;
+}
+
+.skills-table td {
+	padding: 0.5rem;
 }
 
 /*----------------
 PROJECTS
 ------------------*/
+
+.projects-intro {
+	margin-bottom: 30px;
+}
 
 .projects {
 	display: flex;
@@ -105,10 +134,12 @@ PROJECTS
 
 .card-img-top {
 	margin-top: 10px;
+	border: solid 2px #004225;
+	height: 20rem;
 }
 
 .card-button {
-	background-color: hotpink;
+	background-color: #ff69b4;
 	border: none;
 	border-radius: 8px;
 	padding: 20px;
