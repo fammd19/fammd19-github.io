@@ -7,7 +7,6 @@ body {
 }
 
 a {
-	font-weight: bold;
 	color: #ffffed;
 	text-decoration: none;
 }
@@ -153,6 +152,20 @@ PROJECTS
 }
 
 /*----------------
+BLOG INDEX
+------------------*/
+
+.blog-cards {
+	display: flex;
+	justify-content: center;
+}
+
+.blog-card-title,
+.blog-card-text {
+	color: black;
+}
+
+/*----------------
 FOOTER
 ------------------*/
 
@@ -169,6 +182,13 @@ footer {
 
 .contact {
 	padding-top: 1rem;
+	font-weight: bold;
+}
+
+.footer-icon {
+	height: 2.8rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*----------------
