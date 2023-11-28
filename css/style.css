@@ -177,7 +177,10 @@ footer {
 	position: sticky;
 	bottom: 0;
 	height: 4rem;
-	width: 100%;
+}
+
+.col-3 {
+	width: 33%;
 }
 
 .contact {
