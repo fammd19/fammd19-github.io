@@ -172,15 +172,18 @@ FOOTER
 footer {
 	background-color: #004225;
 	text-align: center;
-	margin: auto;
 	padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 	position: sticky;
 	bottom: 0;
 	height: 4rem;
 }
 
-.col-3 {
-	width: 33%;
+.icon-col {
+	width: 25%;
+}
+
+.contact-col {
+	width: 50%;
 }
 
 .contact {
