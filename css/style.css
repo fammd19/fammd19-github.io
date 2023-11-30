@@ -42,6 +42,11 @@ nav {
 	visibility: hidden;
 }
 
+.home {
+	font-weight: bold;
+	color: white;
+}
+
 /*----------------
 MAIN
 ------------------*/
