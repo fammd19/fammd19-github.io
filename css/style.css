@@ -65,6 +65,7 @@ h1 {
 	font-weight: bolder;
 	color: hotpink;
 	padding: 0.2rem 0 0.2rem 0;
+	text-align: center;
 }
 
 h2 {
@@ -165,6 +166,33 @@ BLOG INDEX
 	color: black;
 }
 
+/*----------------
+BLOG + PROJECT PAGES
+------------------*/
+
+.content-page {
+	text-align: left;
+}
+
+.content-left {
+	display: inline-block;
+	float: left;
+	padding-right: 2rem;
+}
+
+.content-right {
+	display: inline-block;
+	float: right;
+	padding-left: 2rem;
+}
+
+.content-image {
+	max-height: 15rem;
+	max-width: 20rem;
+	margin: 2rem 0 2rem 0;
+	border-radius: 5;
+	border: solid 2px #004225;
+}
 /*----------------
 FOOTER
 ------------------*/
