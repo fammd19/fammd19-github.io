@@ -89,6 +89,10 @@ p {
 PROFILE
 ------------------*/
 
+.profile-title {
+	text-align: left;
+}
+
 .profile-text {
 	width: 40%;
 	display: inline-block;
