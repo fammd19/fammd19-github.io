@@ -239,9 +239,11 @@ MEDIA
 ------------------*/
 
 @media only screen and (max-width: 678px) {
-	.profile-text {
+	.profile-text,
+	.profile-title {
 		text-align: center;
 		width: 80%;
+		margin: auto;
 	}
 
 	.content-left,
