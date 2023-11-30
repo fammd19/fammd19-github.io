@@ -234,4 +234,10 @@ MEDIA
 		text-align: center;
 		width: 80%;
 	}
+
+	.content-left,
+	.content-right {
+		padding: 0;
+		width: 100%;
+	}
 }
