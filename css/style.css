@@ -32,7 +32,7 @@ nav {
 	margin-left: 10px;
 }
 
-/*Adjust for header on fargment links*/
+/*Adjust for header spacing on fragment links*/
 #about::before,
 #projects::before {
 	content: "";
@@ -45,6 +45,10 @@ nav {
 .home {
 	font-weight: bold;
 	color: white;
+}
+
+.offcanvas-header {
+	margin: 10px 0 0 10px;
 }
 
 /*----------------
