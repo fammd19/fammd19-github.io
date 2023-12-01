@@ -8,7 +8,7 @@ Project Name: Fi M-D Portfolio Website
 
 ## Purpose
 
-Purpose: This website was built to showcase my work and journey as a developer.
+This site has been developed to showcase Fi's work and journey as a developer.
 
 ## Built With
 
@@ -16,5 +16,5 @@ The site utilises HTML & CSS, as well as the Bootstrap framework.
 
 ## Contact
 
-fimdtech@gmail.com
-fammd19-github.io
+Email: fimdtech@gmail.com
+GitHub: fammd19-github.io
