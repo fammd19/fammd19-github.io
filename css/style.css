@@ -32,6 +32,15 @@ nav {
 	margin-left: 10px;
 }
 
+.offcanvas-header {
+	margin: 10px 0 0 10px;
+}
+
+.home {
+	font-weight: bold;
+	color: white;
+}
+
 /*Adjust for header spacing on fragment links*/
 #about::before,
 #projects::before {
@@ -40,15 +49,6 @@ nav {
 	height: 90px;
 	margin-top: -90px;
 	visibility: hidden;
-}
-
-.home {
-	font-weight: bold;
-	color: white;
-}
-
-.offcanvas-header {
-	margin: 10px 0 0 10px;
 }
 
 /*----------------
