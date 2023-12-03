@@ -149,6 +149,7 @@ PROJECTS
 	margin-top: 10px;
 	border: solid 2px #004225;
 	height: 20rem;
+	object-fit: cover;
 }
 
 .card-button {
