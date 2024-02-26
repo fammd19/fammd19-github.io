@@ -184,6 +184,7 @@ BLOG INDEX
 	color: black;
 }
 
+
 /*----------------
 BLOG + PROJECT PAGES
 ------------------*/
@@ -211,6 +212,15 @@ BLOG + PROJECT PAGES
 	border-radius: 5;
 	border: solid 2px #004225;
 }
+
+.blog-link {
+	color: #ff69b4;
+}
+
+.italics {
+	font-style: italic;
+}
+
 /*----------------
 FOOTER
 ------------------*/
