@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>The Wine Pairer | JavaScript Application</title>
+		<meta name="description" content="Read more about Fi's JavaScript App: The Wine Pairer." />
+		<link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="index.js"></script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-WRM77TCP");
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Search Console -->
+		<meta
+			name="google-site-verification"
+			content="k24TkYgNiktDJAqhAVwuHzUnP5aiM4Y95DrlEJxpXwM"
+		/>
+		<!-- End Search Console -->
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="offcanvas"
+				data-bs-target="#navbarOffcanvasLg"
+				aria-controls="navbarOffcanvasLg"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="offcanvas offcanvas-end"
+				tabindex="-1"
+				id="navbarOffcanvasLg"
+				aria-labelledby="navbarOffcanvasLgLabel"
+			>
+				<div class="offcanvas-header">
+					<button
+						type="button"
+						class="btn-close text-reset"
+						data-bs-dismiss="offcanvas"
+						aria-label="Close"
+					></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav justify-content flex-grow-1 pe-3">
+						<li class="nav-item">
+							<a class="nav-link home .navbar-nav" href="../">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../blog-index.html">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main class="content-page">
+			<h1>The Wine Pairer</h1>
+            <div class="content-right">
+				<img class="content-image" src="../images/the-wine-pairer.jpeg" />
+			</div>
+			<p>
+				In our household, wine is a popular topic. We love drinking it (naturally) but also learning about it. My learning it's purely self-indulgent: “how can we enjoy this wine the most” rather than anything more philosophical. With this, two things come front and centre:
+			</p>
+            <ol>
+                <li>Setting - occasion, company, location</li>
+                <li>Food</li>
+            </ol>
+            <p>Knowing what food to pair with a wine is a skill, and remembering your favourite combinations is often just as tricky. I therefore wanted to build a simple app to save my favourite wines and also play around with some JavaScript. Enter The Wine Pairer!</p>
+			
+
+            <p>The process for creating the app was quite simple:</p>
+            <div class="content-right">
+                <img class="content-image" src="../images/figma-mock-up.png" />
+            </div>
+            <ol>
+                <li>
+                    <p><strong>See if an API exists</strong></p>
+                    <p>From my research I discovered that it's rather slim pickings on food and wine pairing APIs. Perhaps not surprising. However, I eventually found one from Spoonacular to use as my base. The app pulls pairing suggestions from Spoonacular and allows you to save them to your favourites. You can also add to the list manually with a simple form.</p>
+                </li>
+                <li>
+                    <p><strong>Mock up a design</strong></p>
+                    <p>Thanks to Figma and the fact I wanted this to be a single page, it was a nice quick job. I wanted something a little retro as you can see from the design and product.</p>
+                </li>
+
+                <li>
+                    <p><strong>Create an MVP, then expand</strong></p>
+                    <p>First and foremost this was surfacing the right data, utilising fetch, and saving this locally. I had a very rudimentary app that I then worked to flesh out, handling errors and edge cases.</p>
+                </li>
+                <div class="content-right">
+                    <img class="content-image" src="../images/wine-pairer-code.jpeg" />
+                </div>
+                <li>
+                    <p><strong>Style</strong></p>
+                    <p>Once the functionality was doing what I had hoped, I styled the app, keeping to my Figma design in large. I amended certain elements once I saw them in real-life to provide a better UX.</p>
+                </li>
+                <li>
+                    <p><strong>Test & improve</strong></p>
+                    <p>After testing myself I simply handed it over to my husband and asked him to try to break it. Thankfully, he couldn't. We then ran over what could be better. I did the same exercise with my tech mentor. The consensus was:
+                        <ul>
+                            <li>Duplicate handling - it absolutely didn't make sense to let the user put the same pairings in the same list multiple times</li>
+                            <li>Letting the user know if the pairing had been added to the list or, if not, why not</li>
+                            <li>Expanding the wine list - this was a minor point but we wanted to expand to include some more niche wines. In reality there are too many wines for a simple drop down so there is more work to do here</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Refactor</strong></p>
+                    <p>While I made an effort to keep my code DRY, there were repetitive elements so I spent a couple of hours tidying up.</p>
+                </li>                                                                
+            </ol>
+            <h3>Next steps</h3>
+            <p>At present I've kept the wine list very short in the drop down, although you can add any manner of favourites. While it's very easy to expand this, the API does not have extensive pairing. I’d ultimately like to find (or build) another API - Spoonacular has been great for the MVP but I would like something more comprehensive, and which accounts for non-US linguistics, in the future.</p>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-3 icon-col">
+						<a target="_blank" href="https://github.com/fammd19"
+							><img class="footer-icon" src="../images/icons/github.svg"
+						/></a>
+					</div>
+					<div class="col-3 contact-col">
+						<div class="contact">
+							<a href="mailto:fimdtech@gmail.com">Get in touch</a>
+						</div>
+					</div>
+					<div class="col-3 icon-col">
+						<a
+							target="_blank"
+							href="https://au.linkedin.com/in/fiona-mellink-6463648b"
+							><img class="footer-icon" src="../images/icons/linkedin.svg"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
